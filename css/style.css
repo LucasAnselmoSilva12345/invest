@@ -1,0 +1,94 @@
+:root{
+  --bg: #f0f2f5;
+  --bg-scrollbar: #f0f2f5;
+  --bg-scrollbar-area: #3dd705;
+
+  --color-home-a: #183128;
+  --color-home-h1: #014023;
+  --color-home-border: #056136;
+
+  --color-simu-a: #49aa26;
+  --color-simu-a-hover: #3dd705;
+  --color-simu-button: #fff;
+  --bg-simu-button:#49aa26;
+  --bg-simu-hover-button: #3dd705;
+  --color-simu-cancel: #e92929;
+  --color-simu-border: #e92929;
+  --color-simu-h2: #363f5f;
+  --bg-simu-header: #2d4d22;
+  --color-simu-balance-h2: #fff;
+  --bg-simu-card: #fff;
+  --color-simu-card: #363f5f;
+  --bg-simu-total: #49aa26;
+  --color-simu-total: #fff;
+  --color-simu-table: #969cb3;
+  --bg-simu-table-th: #fff;
+  --bg-simu-table-td: #fff;
+  --color-simu-description: #363f5f;
+  --color-simu-income: #12a454;
+  --color-simu-expense: #730ab1;
+  --bg-simu-details: #70239c;
+  --color-simu-details-p: #fff;
+  --bg-simu-modal-overlay: rgba(0,0,0,0.7);
+  --bg-simu-modal: #f0f2f5;
+  --bg-simu-group: #8243a7;
+  --color-simu-small: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 93.75%;
+  background-color: var(--bg);
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, li{
+  list-style: none;
+}
+
+::-webkit-scrollbar{
+  /* largura e altura */
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track{
+  /* fundo */
+  background: var(--bg-scrollbar);
+}
+
+::-webkit-scrollbar-thumb{
+  /* fundo onde a barra está */
+  background: var(--bg-scrollbar-area);
+}
+
+.menu{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-logo img{
+  height: 200px;
+}
+
+.menu a span{
+  font-size: 1.25rem;
+  color: var(--color-home-a);
+}

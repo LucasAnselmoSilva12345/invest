@@ -1,0 +1,126 @@
+.home-investing{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.area{
+  flex-basis: 100%;
+  min-width: 300px;
+}
+
+.area img{
+  max-width: 50%;
+  margin: 55px auto;
+}
+
+.area h1{
+  font-size: 4.875rem;
+  color: #534d4d;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.area p{
+  font-size: 1.375rem;
+  color: #534d4d;
+  margin-bottom: 55px;
+}
+
+.investmente_benefits_bg{
+  background-color: #0e3312;
+}
+
+.investmente_benefits{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.investmente_benefits h4{
+  color: #1691a6;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.investmente_benefits h1{
+  color: #fff;
+  font-size: 3.375rem;
+  margin-bottom: 20px;
+}
+
+.investmente_benefits p{
+  color: #14a889;
+  font-size: 1.125rem;
+
+}
+
+#cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 50px;
+}
+
+.card{
+  margin: 0 auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  border: 1px solid #14a889;
+  border-radius: 8px;
+
+}
+
+.card img{
+  margin: 20px auto;
+  max-width: 50%;
+}
+
+p.card_text{
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.row{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.column img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.column h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #534d4d;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+.column p{
+  font-size: 1.125rem;
+  color: #747474;
+  margin-left: 20px;
+}

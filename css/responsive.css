@@ -1,0 +1,127 @@
+@media (max-width: 800px){
+  .menu{
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-logo img{
+    margin-bottom: 25px;
+  }
+  .page-home{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .row h1{
+    font-size: 3rem;
+    text-align: center;
+
+  }
+  .row a span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .home-investing{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .area h1{
+    font-size: 3.75rem;
+    margin-bottom: 35px;
+  }
+
+  .area p{
+    font-size: 1.25rem;
+    margin-bottom: 35px;
+  }
+
+  .area img{
+    max-width: 80%;
+    margin: 55px auto;
+  }
+
+  .investmente_benefits{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .investmente_benefits h4{
+    color: #1691a6;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .investmente_benefits h1{
+    color: #fff;
+    font-size: 2.5;
+    margin-bottom: 20px;
+  }
+  
+  .investmente_benefits p{
+    color: #14a889;
+    font-size: 1.125rem;
+  }
+
+  #cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 35px;
+  }
+
+  .row{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column img{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-left: 35px;
+  }
+  
+  .column h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #534d4d;
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+  
+  .column p{
+    font-size: 1.125rem;
+    color: #747474;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 600px){
+  .row img{
+    max-width: 90%;
+  }
+}
+
+/* Simulation */
+@media (min-width: 800px){ /* de 800 para baixo faça os codigos acima, agora de 800 para cima, faça isso */
+  html{
+    font-size: 87.5%; /* 14px */
+  }
+  #balance{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
