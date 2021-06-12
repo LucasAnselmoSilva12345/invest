@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/invest.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/icone.svg"
+      type="image/x-icon"
+    />
+    <title>Invest | Simulador</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img src="./assets/logo.png" alt="Logo da Invest" />
+      </a>
+    </header>
+
+    <main class="container">
+      <section id="balance">
+        <h2 class="sr-only">Balanço</h2>
+
+        <div class="card">
+          <h3>
+            <span>Depósito Inicial</span>
+            <img src="./assets/income.svg" alt="Imagem de estrada" />
+          </h3>
+          <p id="incomeDisplay">R$ 0,00</p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <span>Valor investido por mês</span>
+            <img src="./assets/income.svg" alt="Imagem de investir" />
+          </h3>
+          <p id="investmentDisplay">R$ 0,00</p>
+        </div>
+
+        <div class="card total">
+          <h3>
+            <span>Total em 12 meses</span>
+            <img src="./assets/total.svg" alt="Imagem de total" />
+          </h3>
+          <p id="totalDisplay">R$ 0,00</p>
+        </div>
+      </section>
+
+      <section id="transaction">
+        <h2 class="sr-only">Transações</h2>
+
+        <a href="#" onclick="Modal.open()" class="button new">
+          + Novo Investimento
+        </a>
+
+        <table id="data_table">
+          <thead>
+            <tr>
+              <th>Seu Nome</th>
+              <th>Valor</th>
+              <th>Data</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="details">
+          <p>
+            <img
+              src="./assets/asterisk.svg"
+              alt="Asterisk informando que o asteristico significa que o valor é um investimento"
+            />
+            = Valor investido
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div id="form">
+          <h2>Novo Investimento</h2>
+          <form action="" onsubmit="Form.submit(event)">
+            <div class="input-group">
+              <label for="sr-only" form="description"> Nome </label>
+              <input
+                type="text"
+                name="description"
+                id="description"
+                placeholder="Seu Nome"
+              />
+            </div>
+            <div class="input-group">
+              <label for="sr-only" form="amount"> Valor do Depósito ou Investimento </label>
+              <input
+                type="number"
+                step="0.01"
+                name="amount"
+                id="amount"
+                placeholder="0,00"
+              />
+              <div class="text_values">
+                <small class="help"> Use vírgula para casas decimais</small>
+                <small class="help">|</small>
+                <small class="help">Use sinal de '+' para fazer um deposito</small>
+                <small class="help">|</small>
+                <small class="help">Use sinal de '-' para fazer um investimento</small>
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="sr-only" form="date"> Data </label>
+              <input type="date" name="date" id="date" />
+            </div>
+            <div class="input-group actions">
+              <a href="#" onclick="Modal.close()" class="button cancel">
+                Cancelar
+              </a>
+              <button type="submit">Salvar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <span>&copy; Lucas Anselmo Moraes Da Silva <p>2021</p></span>
+    </footer> -->
+
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
