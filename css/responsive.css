@@ -106,6 +106,10 @@
     color: #747474;
     margin-left: 20px;
   }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--bg-scrollbar-area);
+  }
 }
 
 @media (max-width: 600px){
@@ -115,9 +119,9 @@
 }
 
 /* Simulation */
-@media (min-width: 800px){ /* de 800 para baixo faça os codigos acima, agora de 800 para cima, faça isso */
+@media (min-width: 800px){
   html{
-    font-size: 87.5%; /* 14px */
+    font-size: 87.5%;
   }
   #balance{
     display: grid;

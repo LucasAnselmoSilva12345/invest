@@ -35,7 +35,7 @@ button:hover{
 
 .button.cancel{
   color: var(--color-simu-cancel);
-  border: 2px var(--color-simu-border) solid;
+  border: 2px solid var(--color-simu-border);
   border-radius: 0.25rem;
 
   height: 50px;
@@ -189,7 +189,7 @@ td.expense{
 
 .details{
   background: var(--bg-simu-details);
-  margin-top: 20px;
+  margin: 20px auto 35px;
   padding: 1rem 2rem;
   border-radius: 0.25rem;
   display: flex;
@@ -267,11 +267,6 @@ input{
 .input-group{
   margin-top: 0.8rem;
 }
-
-/*
-  background-color: #70239c;
-
-*/
 
 .input-group .text_values{
   background-color: var(--bg-simu-group);
